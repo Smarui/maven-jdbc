@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+                      https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0"
+         metadata-complete="false">
+
+  <display-name>Welcome to Tomcat</display-name>
+  <description>
+    Welcome to Tomcat
+  </description>
+  <listener>
+    <listener-class>listener.AddServlet</listener-class>
+  </listener>
+  <servlet>
+    <servlet-name>HelloWord</servlet-name>
+    <servlet-class>HelloWord</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>HelloWord</servlet-name>
+    <url-pattern>/HelloWord</url-pattern>
+  </servlet-mapping>
+
+<!--  <servlet>-->
+<!--    <servlet-name>Request07</servlet-name>-->
+<!--    <multipart-config></multipart-config>-->
+<!--    <servlet-class>request.Request07</servlet-class>-->
+<!--  </servlet>-->
+
+<!--  <servlet-mapping>-->
+
+<!--    <servlet-name>Request07</servlet-name>-->
+<!--    <url-pattern>/Request07</url-pattern>-->
+<!--  </servlet-mapping>-->
+
+</web-app>
